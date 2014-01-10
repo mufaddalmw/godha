@@ -1,4 +1,6 @@
-
+function nav(e){
+	$('.mainheader .nav ul > li').eq(e).addClass('active');
+}
 $(window).load(function(){
   /*! Only run this on old ugly Internet explorer browsers*/
   if ( $.browser.msie ) {
