@@ -156,7 +156,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .customer-container h2{color:#FFCC00;}
 .icon-quote{content:""; width:28px; height:23px; background:url(../img/sprite.png) no-repeat -31px -7px; display:inline-block; margin:40px 0;}
 .list-social {text-align:center; margin:25px 0 20px;}
-.list-social > li {display:inline-block;}
+.list-social > li {display:inline-block; margin-left: -2px;}
 .list-social > li a {display:block; width:104px; height:62px; background:#F0F0F0;}
 .list-social > li a:hover{background:#ddd;}
 .list-social > li:first-child a {border-radius:3px 0 0 3px;}
