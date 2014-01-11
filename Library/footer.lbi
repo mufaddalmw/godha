@@ -2,11 +2,11 @@
 	<section class="container">
     <div class="pull-left">
         <ul class="list-foolinks">
-        	<li><a href="javascript:void(0);">Home</a></li>
-            <li><a href="javascript:void(0);">About</a></li>
-            <li><a href="javascript:void(0);">Products</a></li>
-            <li><a href="javascript:void(0);">Infrastructure</a></li>
-            <li><a href="javascript:void(0);">Contact</a></li>
+        	<li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../products.html">Products</a></li>
+            <li><a href="../infrastructure.html">Infrastructure</a></li>
+            <li><a href="../contact.html">Contact</a></li>
         </ul>
         Copyright&copy; <a href="http://www.Godhacabcon.com">Godhacabcon.com</a> 2013. All Rights Reserved
     </div>

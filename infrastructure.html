@@ -14,6 +14,7 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/normalize.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -28,19 +29,26 @@
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav><!-- #EndLibraryItem --><div class="row-fluid banner b2">
-      <h1>ABOUT</h1>
+      <h1>INFRASTRUCTURE</h1>
 </div>
   </section>
 </header>
 <section class="fluid-container">
     <div class="container">
-    	<h2 class="text-center">A BEAUTIFUL HEADING ABOUT GODHA CABCON</h2>
+    	<h2 class="text-center">A BEAUTIFUL HEADING ABOUT INFRASTRUCTURE</h2>
         <div class="content-small">
         <p class="text-center">Supporting Sub Headline</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
         </div>
+      <section class="row-fluid image-gallery">
+       	<div class="span6"><a href="img/gallery-big-01.jpg"><img src="img/gallery-small-01.jpg"  alt=""/></a></div>
+        <div class="span6"><a href="img/gallery-big-02.jpg"><img src="img/gallery-small-02.jpg"  alt=""/></a></div>
+        <div class="span6"><a href="img/gallery-big-03.jpg"><img src="img/gallery-small-03.jpg"  alt=""/></a></div>
+        <div class="span6"><a href="img/gallery-big-04.jpg"><img src="img/gallery-small-04.jpg"  alt=""/></a></div>
+        <div class="span6"><a href="img/gallery-big-01.jpg"><img src="img/gallery-small-01.jpg"  alt=""/></a></div>
+        <div class="span6"><a href="img/gallery-big-02.jpg"><img src="img/gallery-small-02.jpg"  alt=""/></a></div>
+        <div class="span6"><a href="img/gallery-big-03.jpg"><img src="img/gallery-small-03.jpg"  alt=""/></a></div>
+        <div class="span6"><a href="img/gallery-big-04.jpg"><img src="img/gallery-small-04.jpg"  alt=""/></a></div>
+      </section>
   </div>
 </section>
 <section class="fluid-container inview">
@@ -70,8 +78,35 @@
 <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script> -->
 <script src="js/main.js"></script>
 <script src="js/jquery.inview.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script>
-nav(1);
+nav(3);
+
+//INTIALIZE ZOOM IMAGE GALLERY
+ $('.image-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          closeOnContentClick: false,
+          closeBtnInside: false,
+          mainClass: 'mfp-with-zoom mfp-img-mobile',
+          image: {
+            verticalFit: true,
+            titleSrc: function(item) {
+              return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+            }
+          },
+          gallery: {
+            enabled: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+            opener: function(element) {
+              return element.find('img');
+            }
+          }
+          
+        });
 </script>
 </body>
 </html>
