@@ -14,10 +14,11 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/normalize.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-<header class="mainheader">
+<header class="mainheader" data-speed="4" data-type="background">
   <section class="container"><!-- #BeginLibraryItem "/Library/header.lbi" --><a href="index.html" class="logo"><img src="img/logo.png"  alt=""/></a>
   <nav class="nav">
       <ul class="proxima bold">
@@ -76,18 +77,30 @@
   </div> 
 </section>
 
-<section class="customer-container">
+<section class="customer-container" data-speed="4" data-type="background">
 	<div class="container">
 	<h2>WHAT OUR CUSTOMERS SAYS...</h2>
     <i class="icon-quote"></i>
+    <div class="scroll" style="height:90px;">
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod<br>tincidunt ut laoreet dolore magna aliquam erat .</p>
     <p><span class="fsize-16">Vikas Makwana</span><br>
 CEO- Makwana Group of Industries
 </p>
+<div class="divider"></div>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod<br>tincidunt ut laoreet dolore magna aliquam erat .</p>
+    <p><span class="fsize-16">Vikas Makwana</span><br>
+CEO- Makwana Group of Industries
+</p>
+<div class="divider"></div>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod<br>tincidunt ut laoreet dolore magna aliquam erat .</p>
+    <p><span class="fsize-16">Vikas Makwana</span><br>
+CEO- Makwana Group of Industries
+</p>
+</div>
 </div>
 </section>
 
-<section class="fluid-container inview">
+<section class="fluid-container social-container inview">
 	<section class="container">
     	<ul class="list-social">
         	<li><a href="http://www.linkedin.com/" target="_blank" class="linkedin"></a></li>
@@ -107,15 +120,16 @@ CEO- Makwana Group of Industries
         </ul>
         Copyright&copy; <a href="http://www.Godhacabcon.com">Godhacabcon.com</a> 2013. All Rights Reserved
     </div>
-    <div class="pull-right mt15"><img src="img/999-logo.png"  alt=""/></div>
+    <div class="pull-right mt15"><a href="http://www.999watt.com" target="_blank"><img src="img/999-logo.png"  alt=""/></a></div>
     </section>
 </footer><!-- #EndLibraryItem --><!--PUT JAVASCRIPT FILES HERE FOR FASTER PAGE LOADING-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
-<!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script> -->
+<script src="js/vendor/jquery-1.10.1.min.js"></script> 
 <script src="js/main.js"></script>
 <script src="js/jquery.inview.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
 nav(0);
+$(".scroll").mCustomScrollbar();
 </script>
 </body>
 </html>
