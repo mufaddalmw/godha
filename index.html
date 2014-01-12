@@ -14,7 +14,6 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="css/normalize.min.css">
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -81,21 +80,30 @@
 	<div class="container">
 	<h2>WHAT OUR CUSTOMERS SAYS...</h2>
     <i class="icon-quote"></i>
-    <div class="scroll" style="height:100px;">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod<br>tincidunt ut laoreet dolore magna aliquam erat .</p>
+    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod<br>tincidunt ut laoreet dolore magna aliquam erat .</p>
     <p><span class="fsize-16">Vikas Makwana</span><br>
 CEO- Makwana Group of Industries
 </p>
-<div class="divider"></div>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod<br>tincidunt ut laoreet dolore magna aliquam erat .</p>
-    <p><span class="fsize-16">Vikas Makwana</span><br>
-CEO- Makwana Group of Industries
+    </div>
+    <div class="item">
+      <p>Aenean at lectus id erat accumsan venenatis sed eu metus. Phasellus iaculis porta purus,<br> eu auctor lorem vehicula a. Nulla facilisi. Vivamus tincidunt posuere viverra!</p>
+    <p><span class="fsize-16">Mufaddal Motorwala</span><br>
+Co-Founder
 </p>
-<div class="divider"></div>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod<br>tincidunt ut laoreet dolore magna aliquam erat .</p>
-    <p><span class="fsize-16">Vikas Makwana</span><br>
-CEO- Makwana Group of Industries
-</p>
+    </div>
+    
+  </div>
+
 </div>
 </div>
 </section>
@@ -126,10 +134,9 @@ CEO- Makwana Group of Industries
 <script src="js/vendor/jquery-1.10.1.min.js"></script> 
 <script src="js/main.js"></script>
 <script src="js/jquery.inview.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
 nav(0);
-$(".scroll").mCustomScrollbar();
 </script>
 </body>
 </html>
